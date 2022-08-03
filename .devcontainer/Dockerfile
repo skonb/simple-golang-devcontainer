@@ -54,7 +54,7 @@ RUN set -x \
     && apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 # golang
-ARG GO_VERSION=1.18.5
+ARG GO_VERSION=1.19
 RUN set -x \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
